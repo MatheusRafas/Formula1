@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@+db^q0qbpkisue45*$=9jt(m^)7bymgh*9hv^=c0#-d0w9ya&
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'formula1.gapovila.repl.co',
+    'formula1--matheusrafas.repl.co',
     '127.0.0.1',
     'localhost',
 ]
