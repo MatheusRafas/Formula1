@@ -1,6 +1,3 @@
-
-GRUPO: Daniele de Andrade, Gabriel Capovila, Lucas Monteiro, Matheus Rafael
-
 Usuários disponíveis para fazer login no admin ou passar como parâmetro para autenticar no Postman:
 
 Usuários    |Senha
@@ -13,8 +10,7 @@ Para rodar o programa: python manage.py runserver
 ------------------------------------------------------------------------------
 
 Servidor está rodando no repl.it
-  Caminho do projeto (necessário fazer login no repl.it para entrar): https://replit.com/join/gaxgwckrwp-gapovila
-  Caminho do home: https://formula1.gapovila.repl.co/
+  Caminho do home: https://formula1--matheusrafas.repl.co/
 
 E também funciona localmente
 
@@ -22,7 +18,7 @@ URLs importantes (para rodar localmente, substituir o trecho até repl.co pelo o
 
 Aplicação Web (telas):
   Para acessar a página home da aplicação, entrar em http://localhost:8000/
-    Ou, pelo repl.it, em https://formula1.gapovila.repl.co/
+    Ou, pelo repl.it, em https://formula1--matheusrafas.repl.co/
   Para listar os carros: http://localhost:8000/carros/
   Para listar as equipes: http://localhost:8000/equipes/
   Para listar os pilotos: http://localhost:8000/pilotos/
