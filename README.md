@@ -5,9 +5,9 @@
 🏁 Projeto desenvolvido utilizando Python e Django, em sua arquitetura.</br>
 🏁 Utilizado padrões de projeto: Model, View e Template. </br>
 🏁 Utilizado bootstrap e site Admin do Django. <br>
-🏁 Criado API REST que listou a classe principal
-🏁 Dentro do projeto há um arquivo denominado - <strong>LEIA-ME.txt</strong>, que contém todo passo a passo é acesso as URLs.
-🏁 O projeto tem como base, o registro de pilotos, carros e equipes. 
+🏁 Criado API REST que listou a classe principal <br>
+🏁 Dentro do projeto há um arquivo denominado - <strong>LEIA-ME.txt</strong>, que contém todo passo a passo é acesso as URLs. <br>
+🏁 O projeto tem como base, o registro de pilotos, carros e equipes. <br>
 </p> 
 
 <h2>🏎LINK DO SITE</h2>
