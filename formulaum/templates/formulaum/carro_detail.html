@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <a class="btn btn-primary" href="/carros/">Voltar</a>
+
+      <div class="page_header">
+          <h2>Detalhe dos carros</h2>
+      </div>
+      <dl class="dl-horizontal">
+        
+        <dt>Modelo:</dt> 
+        <dd>{{ object.modelo }}</dd>
+
+        <dt>Placa:</dt> 
+        <dd>{{ object.placa }}</dd>
+
+        {% if object.ano %}
+          <dt>Ano:</dt>
+          <dd>{{ object.ano }}</dd>
+        {% endif %}
+
+        {% if object.cor %}
+          <dt>Cor:</dt>
+          <dd>{{ object.cor }}</dd>
+        {% endif %}
+        
+        <dt>Equipe:</dt>
+        <dd>{{ object.equipe }}</dd>
+        <dt>Foi feita a manutenção:</dt>
+        <dd>{% if item.feita_manutencao %}Sim{% else %}Não{% endif %}</dd>
+        
+        {% if object.observacao %}
+          <dt>Observação:</dt> 
+          <dd>{{ object.observacao}}</dd>
+        {% endif %}
+        
+        <dt>Data de Compra:</dt>
+        <dd>{{ object.data_de_compra|date:"d/m/Y H:i"}}</dd>
+        
+{% endblock %}

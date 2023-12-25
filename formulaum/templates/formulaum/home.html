@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h2>Olá, {% if user.first_name %}{{ user.first_name }}{% else %}visitante{% endif %}</h2>
+</div>
+  Atenção: Você tem {{ counter }} {% if count > 1 %}carro com manuteção pendente!{% else %}carros com manuteção pendente!{% endif %}</br>
+  <br/>
+  <a href="/carros/">Ver meus carros</a>
+  <br/>
+  <a href="/equipes/">Ver minhas equipes</a>
+  <br/>
+  <a href="/pilotos/">Ver meus pilotos</a>
+{% endblock %}

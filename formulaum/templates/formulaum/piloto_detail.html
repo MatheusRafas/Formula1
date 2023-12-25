@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <a class="btn btn-primary" href="/pilotos/">Voltar</a>
+
+      <div class="page_header">
+          <h2>Detalhe dos pilotos</h2>
+      </div>
+      <dl class="dl-horizontal">
+        
+        <dt>Nome:</dt> 
+        <dd>{{ object.nome }}</dd>        
+        <dt>Carro:</dt>
+        <dd>{{ object.carro }}</dd>
+        <dt>Equipe:</dt> 
+        <dd>{{ object.equipe }}</dd>        
+        <dt>País de origem:</dt>
+        <dd>{{ object.pais_de_origem }}</dd>
+
+        {% if object.cidade_natal %}
+          <dt>Cidade natal:</dt>
+          <dd>{{ object.cidade_natal }}</dd>
+        {% endif %}
+
+        {% if object.observacao %}
+          <dt>Observação:</dt> 
+          <dd>{{ object.observacao}}</dd>
+        {% endif %}
+
+        {% if object.data_de_nascimento %}
+          <dt>Data de nascimento:</dt> 
+          <dd>{{ object.data_de_nascimento|date:"d/m/Y H:i"}}</dd>
+        {% endif %}
+
+        <dt>Ingresso na equipe:</dt>
+        <dd>{{ object.data_de_ingresso_na_equipe|date:"d/m/Y H:i"}}</dd>
+
+{% endblock %}

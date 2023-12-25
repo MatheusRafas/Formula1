@@ -1,0 +1,47 @@
+
+GRUPO: Daniele de Andrade, Gabriel Capovila, Lucas Monteiro, Matheus Rafael
+
+Usuários disponíveis para fazer login no admin ou passar como parâmetro para autenticar no Postman:
+
+Usuários    |Senha
+admin       |formula123
+dani        |123
+teste       |123
+
+Para rodar o programa: python manage.py runserver
+
+------------------------------------------------------------------------------
+
+Servidor está rodando no repl.it
+  Caminho do projeto (necessário fazer login no repl.it para entrar): https://replit.com/join/gaxgwckrwp-gapovila
+  Caminho do home: https://formula1.gapovila.repl.co/
+
+E também funciona localmente
+
+URLs importantes (para rodar localmente, substituir o trecho até repl.co pelo o caminho do localhost):
+
+Aplicação Web (telas):
+  Para acessar a página home da aplicação, entrar em http://localhost:8000/
+    Ou, pelo repl.it, em https://formula1.gapovila.repl.co/
+  Para listar os carros: http://localhost:8000/carros/
+  Para listar as equipes: http://localhost:8000/equipes/
+  Para listar os pilotos: http://localhost:8000/pilotos/
+  Para a página de administrador, entrar em http://localhost:8000/admin/
+
+APIs rest:
+  Listar carros: http://localhost:8000/api/carros/v1/
+  Listar carros com paginação: http://localhost:8000/api/carros/v1/?page=1
+  Listar carros por status de manutenção: http://localhost:8000/api/carros/v1/?feita_manutencao=0
+  Detalhar carro: http://localhost:8000/api/carros/v1/6/
+  
+  Listar equipes: http://localhost:8000/api/equipes/v1/
+  Listar equipes com paginação: http://localhost:8000/api/equipes/v1/?page=1
+  Listar equipes por país: http://localhost:8000/api/equipes/v1/?pais=Brasil
+  Detalhar equipe: http://localhost:8000/api/equipes/v1/1/
+
+  Listar pilotos: http://localhost:8000/api/pilotos/v1/
+  Listar pilotos com paginação: http://localhost:8000/api/pilotos/v1/?page=1
+  Listar pilotos por nome: http://localhost:8000/api/pilotos/v1/?nome=Maria
+  Detalhar piloto: http://localhost:8000/api/pilotos/v1/8/
+
+------------------------------------------------------------------------------

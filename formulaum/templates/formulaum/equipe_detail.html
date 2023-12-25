@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <a class="btn btn-primary" href="/equipes/">Voltar</a>
+
+      <div class="page_header">
+          <h2>Detalhe das equipes</h2>
+      </div>
+      <dl class="dl-horizontal">
+        
+        <dt>Nome:</dt> 
+        <dd>{{ object.nome }}</dd>
+        
+        <dt>País:</dt>
+        <dd>{{ object.pais }}</dd>
+
+        {% if object.cidade %}
+          <dt>Cidade:</dt>
+          <dd>{{ object.cidade }}</dd>
+        {% endif %}
+
+        {% if object.diretor %}
+          <dt>Diretor:</dt> 
+          <dd>{{ object.diretor }}</dd>
+        {% endif %}
+
+        {% if object.funcionarios %}
+          <dt>Funcionários:</dt>
+          <dd>{{ object.funcionarios }}</dt>
+        {% endif %}
+
+        {% if object.observacao %}
+          <dt>Observação:</dt> 
+          <dd>{{ object.observacao}}</dd>
+        {% endif %}
+
+        <dt>Ingresso no torneio:</dt>
+        <dd>{{ object.data_de_ingresso_no_campeonato|date:"d/m/Y H:i"}}</dd>
+
+{% endblock %}

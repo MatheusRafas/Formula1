@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page_header">
+    <h2>Listagem dos pilotos da F1</h2>
+</div>
+<a class="btn btn-primary" href="/pilotos/criar/">Adicionar Piloto</a>
+<table class="table table-striped"  >
+  <thead>
+  <tr>
+    <th>Nome:</th>
+    <th>Carro:</th>
+    <th>Equipe:</th>
+    <th>Data de ingresso na equipe:</th>
+  </tr>
+  </thead>
+  {% for item in latest %}
+    <tr >
+      <td><a href="/pilotos/{{ item.pk }}">{{ item.nome }}</a></td>
+      <td>{{ item.carro }}</td>
+      <td>{{ item.equipe }}</td>
+      <td>{{ item.data_de_ingresso_na_equipe|date:"d/m/Y H:i"}}</td>
+    </tr>
+  {% endfor %}
+</table>
+<a class="btn btn-primary" href="/">Voltar</a>
+{% endblock %}

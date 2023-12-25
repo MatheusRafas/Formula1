@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page_header">
+    <h2>Listagem das equipes da F1</h2>
+</div>
+<a class="btn btn-primary" href="/equipes/criar/">Adicionar Equipe</a>
+<table class="table table-striped"  >
+  <thead>
+  <tr>
+    <th>Nome:</th>
+    <th>País:</th>
+    <th>Data de ingresso no campeonato:</th>
+  </tr>
+  </thead>
+  {% for item in latest %}
+    <tr >
+      <td><a href="/equipes/{{ item.pk }}">{{ item.nome }}</a></td>
+      <td>{{ item.pais }}</td>
+      <td>{{ item.data_de_ingresso_no_campeonato|date:"d/m/Y H:i"}}</td>
+    </tr>
+  {% endfor %}
+</table>
+<a class="btn btn-primary" href="/">Voltar</a>
+{% endblock %}
